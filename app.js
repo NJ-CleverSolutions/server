@@ -4,7 +4,6 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const uri = "mongodb+srv://Team17:Team17@themealmine.tlnklwt.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 const PORT = process.env.PORT || 8080;
-const PORT = process.env.PORT || 49152;
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
 
 app.post("/post", (req, res) => {
